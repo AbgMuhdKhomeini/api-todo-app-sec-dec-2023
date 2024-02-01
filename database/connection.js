@@ -12,6 +12,8 @@ const pool = new Pool({
   max: 20,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 2000,
+  //add this for production
+  ssl: process.env.SSL,
 });
 // pool is a passport to send request to database
 
